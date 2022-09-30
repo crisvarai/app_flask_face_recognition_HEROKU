@@ -1,1 +1,1 @@
-# crisvarai-app_flask_face_recognition_HEROKU
+# app_flask_face_recognition_HEROKU

@@ -1,4 +1,5 @@
 from flask import Flask, render_template, Response
+from flask_cors import CORS
 import cv2
 import face_recognition
 import numpy as np
