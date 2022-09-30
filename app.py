@@ -4,6 +4,7 @@ import cv2
 import face_recognition
 import numpy as np
 app=Flask(__name__)
+CORS(app)
 camera = cv2.VideoCapture(0)
 # Load a sample picture and learn how to recognize it.
 cris_image = face_recognition.load_image_file("Cris/cris.jpg")
