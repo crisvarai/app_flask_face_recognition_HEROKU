@@ -12,10 +12,6 @@ camera = cv2.VideoCapture(0)
 cris_image = face_recognition.load_image_file("Cris/cris.jpg")
 cris_face_encoding = face_recognition.face_encodings(cris_image)[0]
 
-# Load a second sample picture and learn how to recognize it.
-andrea_image = face_recognition.load_image_file("Andrea/andrea.jpg")
-andrea_face_encoding = face_recognition.face_encodings(andrea_image)[0]
-
 # Create arrays of known face encodings and their names
 known_face_encodings = [cris_face_encoding]
 
@@ -56,7 +52,6 @@ def gen_frames():
 
                 face_names.append(name)
             
-
             # Display the results
             for (top, right, bottom, left), name in zip(face_locations, face_names):
                 # Scale back up face locations since the frame we detected in was scaled to 1/4 size
