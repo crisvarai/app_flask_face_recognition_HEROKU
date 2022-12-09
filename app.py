@@ -17,14 +17,10 @@ andrea_image = face_recognition.load_image_file("Andrea/andrea.jpg")
 andrea_face_encoding = face_recognition.face_encodings(andrea_image)[0]
 
 # Create arrays of known face encodings and their names
-known_face_encodings = [
-    cris_face_encoding,
-    andrea_face_encoding
-]
-known_face_names = [
-    "Cris",
-    "Andrea"
-]
+known_face_encodings = [cris_face_encoding]
+
+known_face_names = ["Cris"]
+
 # Initialize some variables
 face_locations = []
 face_encodings = []
